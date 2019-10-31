@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>made with cables</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no">
+  <script src="main.js"></script>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <style type="text/css">
+    body {
+      font: 14px "Open Sans", "Arial", sans-serif;
+    }
+
+    video {
+      margin-top: 2px;
+      border: 1px solid black;
+    }
+
+    .button {
+      cursor: pointer;
+      display: block;
+      width: 160px;
+      border: 1px solid black;
+      font-size: 16px;
+      text-align: center;
+      padding-top: 2px;
+      padding-bottom: 4px;
+      color: white;
+      background-color: darkgreen;
+      text-decoration: none;
+    }
+
+    h2 {
+      margin-bottom: 4px;
+    }
+
+    .left {
+      margin-right: 10px;
+      float: left;
+      width: 160px;
+      padding: 0px;
+    }
+
+    .right {
+      margin-left: 10px;
+      float: left;
+      width: 160px;
+      padding: 0px;
+    }
+
+    .bottom {
+      clear: both;
+      padding-top: 10px;
+    }
+
+    #video {
+      margin-top: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id='video'>
+
+    <div class="left">
+      <div id="startButton" class="button">
+        Start
+      </div>
+      <h2>Preview</h2>
+      <video id="preview" width="160" height="120" autoplay muted></video>
+    </div>
+    <div class="right">
+      <div id="stopButton" class="button">
+        Stop
+      </div>
+      <h2>Recording</h2>
+      <video id="recording" width="160" height="120" controls></video>
+      <a id="downloadButton" class="button">
+        Download
+      </a>
+    </div>
+    <div class="bottom">
+      <pre id="log"></pre>
+    </div>
+    <div id="root">
+      <canvas id="glcanvas" width="100vw" height="100vh"></canvas>
+      <libs />
+      <script type="text/javascript" src="patch/js/patch.js"></script>
+      <script type="text/javascript" src="patch/js/perlin.js"></script>
+    </div>
+  </div>
+  <script>
+
+  </script>
+</body>
